@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>gmTestApp</title>
+</head>
+<body>
+    
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<button id="openAppButton">Open MAUI App</button>
+
+<script type="text/javascript">
+    document.getElementById('openAppButton').addEventListener('click', function () {
+        // Redirect to the MAUI app using the custom URI scheme
+        window.location.href = "emsentryadmin://auth";
+    });
+</script>
+</body>
+</html>
